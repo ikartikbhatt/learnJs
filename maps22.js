@@ -11,5 +11,3 @@ console.log(person);
 
 console.log(person.get('age'));  //get is the method to fetch the value
 console.log(person.keys());  //get is the method to fetch the value
-
-

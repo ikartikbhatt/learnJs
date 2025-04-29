@@ -20,7 +20,7 @@ const products = {
     
     //to avoid this we can use (?.) 
 
-    console.log(products?.specifications?.color);
+    //console.log(products?.specifications?.color);
 
 
 
