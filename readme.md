@@ -40,6 +40,7 @@ git add filename         # Add a specific file
 git commit -m "Describe what you changed"
 git push                 # Push changes to GitHub
 
+
 ➕ 5. Add New Files Later
 Just copy the new files into your repo folder and:
 
