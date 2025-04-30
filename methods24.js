@@ -59,9 +59,15 @@ const person3 = {
 
 //person3.about() //rex 28
 
+
 //if we store the function in variable then what will be the output ?
 
-
-const ans= person3.about()
+const ans= person3.about
 console.log(ans); //undefined as we haven't called the fn yet 
+ans()
 
+
+//to resolve this error we can use bind()
+
+// const ans1=person3.about.bind(person3)
+// ans1();
