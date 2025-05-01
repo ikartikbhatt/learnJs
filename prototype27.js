@@ -35,13 +35,33 @@
 //const hello={key:'value1'} // here it will not  give the prototype ==> false
 //const hello=['value1'] // here it will not  give the prototype ==> false
 
-if (hello.prototype) {
-    console.log('prototype is present');
+// if (hello.prototype) {
+//     console.log('prototype is present');
     
-}
-else{
-    console.log('prototype not present');
+// }
+// else{
+//     console.log('prototype not present');
     
-}
+// }
+
+
+
+//using that prototype to store the value
+
+// function hello(){
+
+// }
+
+// hello.prototype.abc='abc';
+// hello.prototype.xyz='xyz';
+// hello.prototype.sing=function() {
+//         return "lalalalalalala";
+// }
+
+// console.log(hello.prototype);
+// console.log(hello.prototype.sing()); //accessing
+
+
+
 
 
