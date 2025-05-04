@@ -31,7 +31,7 @@
 
 // })
 
-///real life example
+// /real life example
 
 // const users = [
 //   {
