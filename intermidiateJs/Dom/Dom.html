@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myWebsite</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- with help of async parsing and loading of a js file will happen together with the rest of the page but the major loophole in this is when it will come to loading phase it will stop the parsing of the page and then load the js file and then continue the parsing of the page which is not good for the user experience. -->
+
+    <!-- <script src="./03.js" async></script>  -->
+
+    <script src="./06.js" defer></script>
+    <!--defer allows us to do parsing and loading without stoping it and after full parsing it will execute it -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <h1 class="logo">Up To Task</h1>
+        <ul class="nav-items">
+          <li class="nav-item"><a href=""></a>Home</li>
+          <li class="nav-item"><a href=""></a>ToDo</li>
+          <li class="nav-item"><a href=""></a>Signup</li>
+        </ul>
+      </nav>
+      <div class="headline">
+        <h2 id="mainHeading">Manage Your Task</h2>
+        <button class="btn btn-headline">Learn More</button>
+      </div>
+    </header>
+    <section class="todo-section">
+      <h2 class="" style="cursor: pointer">Your Plan For Today ?</h2>
+      <form class="form-todo">
+        <input type="text" name="" id="" placeholder="Add ToDo" />
+        <input type="submit" value="Add ToDo" class="btn" />
+      </form>
+    </section>
+    <section class="section-signup container">
+      <h2>Sign Up</h2>
+      <form class="signup-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirmpassowrd">Confirm Password</label>
+          <input
+            type="password"
+            name="passwordd"
+            id="passwordd"
+            placeholder="Confirm your username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="about">About Yourself</label>
+          <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn signup-btn">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
